@@ -1,0 +1,14 @@
+.item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.item {
+    border: 1px solid #c9c9c9;
+    margin: 20px;
+}
+
+.likes {
+    text-align: end;
+}

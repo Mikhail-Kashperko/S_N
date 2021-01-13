@@ -1,0 +1,25 @@
+.sideBar {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    grid-area: s;
+    background-color: white;
+    margin-top: 30px;
+    border: 1px solid #c9c9c9;
+    border-radius: 15px;
+}
+
+.item {
+    margin: 20px;
+}
+
+.item a {
+    text-decoration: none;
+    color: black;
+}
+
+.item :hover {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid #c9c9c9;
+}

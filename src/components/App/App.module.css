@@ -1,0 +1,24 @@
+body {
+    box-sizing: border-box;
+    margin: 0 300px 300px 300px;
+    background-color: #e6e6e6;
+}
+
+.content_wrapper {
+    grid-area: c;
+    background-color: white;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 15px;
+    border: 1px solid #c9c9c9;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 2fr 10fr;
+    grid-template-areas: 
+    "h h"
+    "s c"
+}
+
