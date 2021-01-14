@@ -8,7 +8,7 @@ import Messenger from '../Messenger'
 import Friends from '../Friends'
 import News from '../News'
 
-const App = () => {
+const App = (props) => {
 
         return (
             <BrowserRouter>
@@ -16,10 +16,12 @@ const App = () => {
                     <Header/>
                     <SideBar/>
                     <div className = {styles.content_wrapper}>
-                        <Route path = '/profile' render = { () => <Profile/>}/>
-                        <Route path = '/messenger' render = { () => <Messenger/>}/>
-                        <Route path = '/friends' render = { () => <Friends/>}/>
+                        <Route path = '/profile' render = { () => <Profile 
+                            state = {props.state.profilePage}/>}/>
+                        <Route path = '/messenger' render = { () => <Messenger
+                            state = {props.state.messagesPage} />}/>
                         <Route path = '/news' render = { () => <News/>}/>
+                        <Route path = '/friends' render = { () => <Friends/>}/>
                     </div>
                 </div>
             </BrowserRouter>

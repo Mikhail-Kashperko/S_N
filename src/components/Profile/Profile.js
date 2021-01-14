@@ -1,18 +1,13 @@
 import React from 'react'
-import Posts from './Posts'
+import Wall from './Wall'
 import ProfileInfo from './ProfileInfo'
 
-const Profile = () => {
-
-    let postData = [
-        {id: 1, text: 'post', likesCount: 3, key: 1},
-        {id: 2, text: 'post2', likesCount: 7, key: 2}
-    ]
+const Profile = (props) => {
 
     return (
         <div>
             <ProfileInfo/>
-            <Posts postData = {postData}/>
+            <Wall postData = {props.state.postData}/>
         </div>
     )
 }

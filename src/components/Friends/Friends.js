@@ -1,15 +1,14 @@
 import React from 'react'
 import styles from './Friends.module.css'
 
-const Friends = () => {
+const Friends = (props) => {
+
+    
     return (
 
         <div>
             <div className = {styles.item}>
-                Friend1
-            </div>
-            <div className = {styles.item}>
-                Friend2
+                Kolya
             </div>
         </div>
         

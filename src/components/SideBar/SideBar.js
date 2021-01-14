@@ -12,10 +12,12 @@ const SideBar = () => {
             <NavLink to = '/messenger'>Messages</NavLink>
         </div>
         <div className = {styles.item}>
-            <NavLink to = '/friends'>Friends</NavLink>
+            <NavLink to = '/news'>News</NavLink>
         </div>
         <div className = {styles.item}>
-            <NavLink to = '/news'>News</NavLink>
+            <div className = {styles.friends}>
+                <NavLink to = '/friends'>Friends</NavLink>
+            </div>
         </div>
     </section>
     )
