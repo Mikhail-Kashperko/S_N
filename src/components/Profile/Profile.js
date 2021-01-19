@@ -7,7 +7,11 @@ const Profile = (props) => {
     return (
         <div>
             <ProfileInfo/>
-            <Wall postData = {props.state.postData}/>
+            <Wall 
+                dispatch = {props.dispatch}
+                newPostText = {props.profilePage.newPostText}
+                postData = {props.profilePage.postData}
+            />
         </div>
     )
 }

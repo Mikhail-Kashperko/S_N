@@ -16,10 +16,13 @@ const App = (props) => {
                     <Header/>
                     <SideBar/>
                     <div className = {styles.content_wrapper}>
-                        <Route path = '/profile' render = { () => <Profile 
-                            state = {props.state.profilePage}/>}/>
+
+                        <Route path = '/profile' render = { () => <Profile
+                            dispatch = {props.dispatch} 
+                            profilePage = {props.state.profilePage}/>}/>
+
                         <Route path = '/messenger' render = { () => <Messenger
-                            state = {props.state.messagesPage} />}/>
+                            store = {props.store} />}/>
                         <Route path = '/news' render = { () => <News/>}/>
                         <Route path = '/friends' render = { () => <Friends/>}/>
                     </div>
