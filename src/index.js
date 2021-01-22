@@ -1,19 +1,13 @@
-import store from "./redux/state";
+import store from "./redux/reduxStore";
 import React from "react";
 import ReactDOM from "react-dom";
 import App from './components/App'
+import {Provider} from 'react-redux'
 
-let renderEntireTree = (state) => {
-    ReactDOM.render(
+ReactDOM.render(
 
-        <App 
-            state = {state} 
-            dispatch = {store.dispatch.bind(store)} 
-            store = {store} />,
-        document.getElementById("root")
-    );
-}
-
-renderEntireTree(store.getState())
-
-store.subscribe(renderEntireTree)
+    <Provider store = {store}>
+        <App/>
+        </Provider>,  
+    document.getElementById("root")
+);

@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './Wall.module.css'
 import Post from './PostItem'
-import {updateNewPostTextActionCreator, addPostActionCreator} from './../../../redux/state'
 
 
 const Wall = (props) => {
@@ -11,14 +10,13 @@ const Wall = (props) => {
 
     let newPostElement = React.createRef()
 
-    let addPost = () => {
-        props.dispatch(addPostActionCreator() )
+    let onAddPost = () => {
+        props.addPost()
     }
 
     let onPostChange = () => {
         let text = newPostElement.current.value
-        let action = updateNewPostTextActionCreator(text)
-        props.dispatch (action)
+        props.updateNewPostText(text)
     }
     
    return (
@@ -30,7 +28,7 @@ const Wall = (props) => {
                 ref = {newPostElement}></textarea>
             <button
                 type = 'button' 
-                onClick = {addPost}>
+                onClick = {onAddPost}>
                 Add post
             </button>
         </div>

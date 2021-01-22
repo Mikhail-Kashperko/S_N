@@ -4,11 +4,11 @@ import styles from './App.module.css'
 import Header from '../Header'
 import SideBar from '../SideBar'
 import Profile from '../Profile'
-import Messenger from '../Messenger'
 import Friends from '../Friends'
 import News from '../News'
+import MessengerContainer from "../Messenger/MessengerContainer"
 
-const App = (props) => {
+const App = () => {
 
         return (
             <BrowserRouter>
@@ -16,13 +16,8 @@ const App = (props) => {
                     <Header/>
                     <SideBar/>
                     <div className = {styles.content_wrapper}>
-
-                        <Route path = '/profile' render = { () => <Profile
-                            dispatch = {props.dispatch} 
-                            profilePage = {props.state.profilePage}/>}/>
-
-                        <Route path = '/messenger' render = { () => <Messenger
-                            store = {props.store} />}/>
+                        <Route path = '/profile' render = { () => <Profile/>}/>
+                        <Route path = '/messenger' render = { () => <MessengerContainer/>}/>
                         <Route path = '/news' render = { () => <News/>}/>
                         <Route path = '/friends' render = { () => <Friends/>}/>
                     </div>
