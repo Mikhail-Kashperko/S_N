@@ -3,11 +3,11 @@ import styles from "./ProfileInfo.module.css";
 
 const ProfileInfo = () => {
     return (
-    <div className={styles.profile}>
-        <div className={styles.user_photo}>
-            <img src="../src/img/avatar.jpg"></img>
+    <div className = {styles.profile}>
+        <div className = {styles.user_photo}>
+            <img src = "../src/img/avatar.jpg"></img>
         </div>
-        <div className={styles.user_description}>
+        <div className = {styles.user_description}>
             <div>
                 <h1>Name Surname</h1>
             </div>

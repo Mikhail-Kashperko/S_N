@@ -7,6 +7,7 @@ import Profile from '../Profile'
 import Friends from '../Friends'
 import News from '../News'
 import MessengerContainer from "../Messenger/MessengerContainer"
+import UsersContainer from "../Users/UsersContainer"
 
 const App = () => {
 
@@ -20,6 +21,7 @@ const App = () => {
                         <Route path = '/messenger' render = { () => <MessengerContainer/>}/>
                         <Route path = '/news' render = { () => <News/>}/>
                         <Route path = '/friends' render = { () => <Friends/>}/>
+                        <Route path = '/users' render = { () => <UsersContainer/>}/>
                     </div>
                 </div>
             </BrowserRouter>

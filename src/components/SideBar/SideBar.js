@@ -12,6 +12,9 @@ const SideBar = () => {
             <NavLink to = '/messenger'>Messages</NavLink>
         </div>
         <div className = {styles.item}>
+            <NavLink to = '/users'>Users</NavLink>
+        </div>
+        <div className = {styles.item}>
             <NavLink to = '/news'>News</NavLink>
         </div>
         <div className = {styles.item}>
