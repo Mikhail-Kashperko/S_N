@@ -1,0 +1,27 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "photoURL": "../src/img/avatar.jpg",
+      "followed": "false",
+      "fullName": "Kekuzbek",
+      "status": "aaa",
+      "location": {
+        "city": "Minsk",
+        "country": "Belarus"
+      }
+    },
+
+    {
+      "id": 2,
+      "photoURL": "../src/img/avatar.jpg",
+      "followed": true,
+      "fullName": "lexa",
+      "status": "bbb",
+      "location": {
+        "city": "Moscow",
+        "country": "Russia"
+      }
+    }
+  ]
+}

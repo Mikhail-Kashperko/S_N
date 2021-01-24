@@ -6,8 +6,8 @@ let Users = (props) => {
 
     if( props.users.length === 0) {
 
-        axios.get('https://social-network.samuraijs.com/api/1.0/users').then(response => {
-            props.setUsers(response.data.items)
+        axios.get('http://localhost:3000/users').then(response => {
+            props.setUsers(response.data)
         })
     }
 
@@ -27,13 +27,13 @@ let Users = (props) => {
                     </span>
                     <span>
                         <span>
-                            <div>{u.Name}</div>
+                            <div>{u.fullName}</div>
                             <div>{u.status}</div>
                         </span>
-                        {/* <span>
+                        <span>
                             <div>{u.location.country}</div>
                             <div>{u.location.city}</div>
-                        </span> */}
+                        </span>
                     </span>
                 </div>)}
         </div>
@@ -41,30 +41,3 @@ let Users = (props) => {
 }
 
 export default Users
-
-
-// users = [
-//     {
-//         id: 1,
-//         photoURL: '../src/img/avatar.jpg', 
-//         followed: false, 
-//         fullName: 'Kekuzbek', 
-//         status: 'aaa', 
-//         location: {
-//             city: 'Minsk', 
-//             country: 'Belarus'
-//             } 
-//         },
-
-//     {
-//         id: 2, 
-//         photoURL: '../src/img/avatar.jpg', 
-//         followed: true, 
-//         fullName: 'lexa', 
-//         status: 'bbb', 
-//         location: {
-//             city: 'Moscow', 
-//             country: 'Russia'
-//         } 
-//     }
-// ]
