@@ -5,17 +5,16 @@ import styles from './Users.module.css'
 class Users extends React.Component {
 
     componentDidMount() {
-        axios.get(`http://localhost:3000/users?page=${this.props.currentPage}&count=${this.props.pageSize}`).then(response => {
-            this.props.setUsers(response.data)
-            debugger
-        })
+        axios.get(`http://localhost:3000/users?page=${this.props.currentPage}&count=${this.props.pageSize}`)
+            .then(response => {this.props.setUsers(response.data)
+        }).catch(console.log)
     }
 
     onPageChanged = (pageNumber) => {
         {this.props.setCurrentPage(pageNumber)}
-        axios.get(`http://localhost:3000/users?page=${pageNumber}&count=${this.props.pageSize}`).then(response => {
-            this.props.setUsers(response.data)
-        })
+        axios.get(`http://localhost:3000/users?page=${pageNumber}&count=${this.props.pageSize}`)
+            .then(response => {this.props.setUsers(response.data)
+        }).catch(console.log)
     }
 
     render() {
