@@ -1,7 +1,40 @@
 import React from 'react'
-import Users from './Users'
 import {connect} from 'react-redux'
 import { followAC, setCurrentPageAC, setUsersAC, unfollowAC, setUsersTotalCountAC } from '../../redux/usersReducer'
+import Users from './Users'
+import * as axios from 'axios'
+
+class UsersContainer extends React.Component {
+
+    componentDidMount() {
+
+        axios.get(`http://localhost:3000/users?_page=${this.props.currentPage}&_limit=${this.props.pageSize}`)
+            .then(response => {
+                this.props.setUsers(response.data)
+                this.props.setTotalUsersCount(response.headers["x-total-count"])
+        }).catch(console.log)
+    }
+
+    onPageChanged = (pageNumber) => {
+        
+        {this.props.setCurrentPage(pageNumber)}
+        
+        axios.get(`http://localhost:3000/users?_page=${pageNumber}&_limit=${this.props.pageSize}`)
+            .then(response => {this.props.setUsers(response.data) 
+        }).catch(console.log)
+    }
+
+    render() {
+        return <Users
+            totalUserCount = {this.props.totalUserCount}
+            pageSize = {this.props.pageSize}
+            currentPage = {this.props.currentPage}
+            onPageChanged = {this.props.onPageChanged}
+            users = {this.props.users}
+            follow = {this.props.follow}
+            unfollow = {this.props.unfollow} />
+    }
+}
 
 let mapStateToProps = (state) => {
     return {
@@ -32,4 +65,4 @@ let mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Users)
+export default connect(mapStateToProps, mapDispatchToProps)(UsersContainer)
