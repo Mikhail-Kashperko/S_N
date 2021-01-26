@@ -9,10 +9,12 @@ let Users = (props) => {
     for (let i = 1; i <= pagesCount; i++) {
         pages.push(i)
     }
-    
+
+
     return <div className = {styles.users}>
                 <div>
                     {pages.map (p => {
+                        
                         return <span 
                             className = {props.currentPage === p && styles.selectedPage}
                             onClick = { (e) => {props.onPageChanged(p)} } >{p}</span>

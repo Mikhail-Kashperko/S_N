@@ -11,14 +11,17 @@ class UsersContainer extends React.Component {
         axios.get(`http://localhost:3000/users?_page=${this.props.currentPage}&_limit=${this.props.pageSize}`)
             .then(response => {
                 this.props.setUsers(response.data)
-                this.props.setTotalUsersCount(response.headers["x-total-count"])
+
+                let userCount = Number(response.headers["x-total-count"]) 
+
+                this.props.setTotalUsersCount(userCount)
         }).catch(console.log)
     }
 
     onPageChanged = (pageNumber) => {
         
-        {this.props.setCurrentPage(pageNumber)}
-        
+        this.props.setCurrentPage(pageNumber)
+
         axios.get(`http://localhost:3000/users?_page=${pageNumber}&_limit=${this.props.pageSize}`)
             .then(response => {this.props.setUsers(response.data) 
         }).catch(console.log)
@@ -26,7 +29,7 @@ class UsersContainer extends React.Component {
 
     render() {
         return <Users
-            totalUserCount = {this.props.totalUserCount}
+            totalUsersCount = {this.props.totalUsersCount}
             pageSize = {this.props.pageSize}
             currentPage = {this.props.currentPage}
             onPageChanged = {this.props.onPageChanged}
