@@ -23,10 +23,5 @@
         {"id": 21, "name": "21", "followed": false, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg"},
         {"id": 22, "name": "22", "followed": false, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg"},
         {"id": 23, "name": "23", "followed": false, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg"}
-    ],
-
-    "profile": [
-        {"userid" : 1, "name": "1"},
-        {"userid" : 2, "name": "2"}
     ]
 }

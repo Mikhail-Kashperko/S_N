@@ -7,9 +7,8 @@ import setUserProfile from '../../redux/profileReducer'
 class ProfileContainer extends React.Component {
 
     componentDidMount() {
-
         axios
-            .get(`http://localhost:3000/profile`)
+            .get(`http://localhost:3000/users/1`)
             .then(response => {
                 this.props.setUserProfile(response.data)
         }).catch(console.log)
@@ -17,7 +16,7 @@ class ProfileContainer extends React.Component {
 
     render () {
         return (
-            <Profile {...this.props} profile = {this.props.profile} />
+            <Profile {...this.props} profile = {this.props.profile}/>
         )
     }
 }
