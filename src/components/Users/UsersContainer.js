@@ -11,7 +11,8 @@ class UsersContainer extends React.Component {
 
         this.props.toggleIsFetching(true)
 
-        axios.get(`http://localhost:3000/users?_page=${this.props.currentPage}&_limit=${this.props.pageSize}`)
+        axios
+            .get(`http://localhost:3000/users?_page=${this.props.currentPage}&_limit=${this.props.pageSize}`)
             .then(response => {
                 this.props.setUsers(response.data)
                 this.props.toggleIsFetching(false)
