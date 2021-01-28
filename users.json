@@ -6,5 +6,13 @@
         {"id": 4, "name": "Petr Petrenko", "followed": false, "location": "Minsk, Belarus", "photo" : "https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png", "age": 30},
         {"id": 5, "name": "Vasya Vasenko", "followed": false, "location": "Minsk, Belarus", "photo" : "https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png", "age": 35},
         {"id": 6, "name": "Misha Mishenko", "followed": false, "location": "Minsk, Belarus", "photo" : "https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png", "age": 40}
+    ],
+
+    "auth" : [
+        {"me": {
+            "email": 234
+        }}
     ]
+       
+    }
 }

@@ -6,7 +6,7 @@ const SideBar = () => {
     return (
     <section className = {styles.sideBar}>
         <div className = {styles.item}>
-            <NavLink to = '/profile'>Profile</NavLink>
+            <NavLink to = '/profile/1'>Profile</NavLink>
         </div>
         <div className = {styles.item}>
             <NavLink to = '/messenger'>Messages</NavLink>
