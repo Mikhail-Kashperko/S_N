@@ -1,27 +1,10 @@
 {
     "users" : [
-        {"id": 1, "name": "1", "followed": true, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg"},
-        {"id": 2, "name": "2", "followed": false, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg"},
-        {"id": 3, "name": "3", "followed": false, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg"},
-        {"id": 4, "name": "4", "followed": false, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg"},
-        {"id": 5, "name": "5", "followed": false, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg"},
-        {"id": 6, "name": "6", "followed": false, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg"},
-        {"id": 7, "name": "7", "followed": false, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg"},
-        {"id": 8, "name": "8", "followed": false, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg"},
-        {"id": 9, "name": "9", "followed": false, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg"},
-        {"id": 10, "name": "10", "followed": false, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg"},
-        {"id": 11, "name": "11", "followed": false, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg"},
-        {"id": 12, "name": "12", "followed": false, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg"},
-        {"id": 13, "name": "13", "followed": false, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg"},
-        {"id": 14, "name": "14", "followed": false, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg"},
-        {"id": 15, "name": "15", "followed": false, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg"},
-        {"id": 16, "name": "16", "followed": false, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg"},
-        {"id": 17, "name": "17", "followed": false, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg"},
-        {"id": 18, "name": "18", "followed": false, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg"},
-        {"id": 19, "name": "19", "followed": false, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg"},
-        {"id": 20, "name": "20", "followed": false, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg"},
-        {"id": 21, "name": "21", "followed": false, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg"},
-        {"id": 22, "name": "22", "followed": false, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg"},
-        {"id": 23, "name": "23", "followed": false, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg"}
+        {"id": 1, "name": "Ivan Ivanenko", "followed": true, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg", "age" : 15 },
+        {"id": 2, "name": "Kolya Kolenko", "followed": false, "location": "Minsk, Belarus", "photo" : "https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png", "age": 20},
+        {"id": 3, "name": "Sidor Sidorenko", "followed": false, "location": "Minsk, Belarus", "photo" : "https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png", "age": 25},
+        {"id": 4, "name": "Petr Petrenko", "followed": false, "location": "Minsk, Belarus", "photo" : "https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png", "age": 30},
+        {"id": 5, "name": "Vasya Vasenko", "followed": false, "location": "Minsk, Belarus", "photo" : "https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png", "age": 35},
+        {"id": 6, "name": "Misha Mishenko", "followed": false, "location": "Minsk, Belarus", "photo" : "https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png", "age": 40}
     ]
 }

@@ -31,6 +31,7 @@ let Users = (props) => {
                         <div>
                             <div>{u.name}</div>
                             <div>location: {u.location}</div>
+                            <div>age: {u.age}</div>
                             <div>
                                 {u.followed 
                                     ? <button onClick = { () => {props.unfollow(u.id)}} >unfollow</button> 

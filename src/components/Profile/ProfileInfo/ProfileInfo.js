@@ -11,17 +11,14 @@ const ProfileInfo = (props) => {
     return (
     <div className = {styles.profile}>
         <div className = {styles.user_photo}>
-            <img src = "../src/img/avatar.jpg"></img>
+            <img src = {props.profile.photo}></img>
         </div>
         <div className = {styles.user_description}>
             <div>
                 <h1>{props.profile.name}</h1>
             </div>
-            <div>City:</div>
-            <div>Age:</div>
-            <div>Education:</div>
-            <div>Work:</div>
-            <div>About myself:</div>
+            <div>location : {props.profile.location}:</div>
+            <div>Age: {props.profile.age}</div>
         </div>
     </div>
   );
