@@ -17,7 +17,7 @@ const App = () => {
                     <Header/>
                     <SideBar/>
                     <div className = {styles.content_wrapper}>
-                        <Route path = '/profile/:userId?' render = { () => <ProfileContainer/>}/>
+                        <Route path = '/profile' render = { () => <ProfileContainer/>}/>
                         <Route path = '/messenger' render = { () => <MessengerContainer/>}/>
                         <Route path = '/news' render = { () => <News/>}/>
                         <Route path = '/friends' render = { () => <Friends/>}/>
