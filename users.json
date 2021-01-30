@@ -1,18 +1,81 @@
 {
-    "users" : [
-        {"id": 1, "name": "Ivan Ivanenko", "followed": true, "location": "Minsk, Belarus", "photo" : "../../../src/img/avatar.jpg", "age" : 15 },
-        {"id": 2, "name": "Kolya Kolenko", "followed": false, "location": "Minsk, Belarus", "photo" : "https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png", "age": 20},
-        {"id": 3, "name": "Sidor Sidorenko", "followed": false, "location": "Minsk, Belarus", "photo" : "https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png", "age": 25},
-        {"id": 4, "name": "Petr Petrenko", "followed": false, "location": "Minsk, Belarus", "photo" : "https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png", "age": 30},
-        {"id": 5, "name": "Vasya Vasenko", "followed": false, "location": "Minsk, Belarus", "photo" : "https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png", "age": 35},
-        {"id": 6, "name": "Misha Mishenko", "followed": false, "location": "Minsk, Belarus", "photo" : "https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png", "age": 40}
-    ],
-
-    "auth" : [
-        {"me": {
-            "email": 234
-        }}
-    ]
-       
+  "users": [
+    {
+      "id": 1,
+      "name": "Ivan Ivanenko",
+      "followed": true,
+      "location": "Minsk, Belarus",
+      "photo": "../../../src/img/avatar.jpg",
+      "age": 15,
+      "email": "test1@test.com",
+      "password": "qazxsw"
+    },
+    {
+      "id": 2,
+      "name": "Kolya Kolenko",
+      "followed": false,
+      "location": "Minsk, Belarus",
+      "photo": "https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png",
+      "age": 20,
+      "email": "test2@test.com",
+      "password": "qazxsw"
+    },
+    {
+      "id": 3,
+      "name": "Sidor Sidorenko",
+      "followed": false,
+      "location": "Minsk, Belarus",
+      "photo": "https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png",
+      "age": 25,
+      "email": "test3@test.com",
+      "password": "qazxsw"
+    },
+    {
+      "id": 4,
+      "name": "Petr Petrenko",
+      "followed": false,
+      "location": "Minsk, Belarus",
+      "photo": "https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png",
+      "age": 30,
+      "email": "test4@test.com",
+      "password": "qazxsw"
+    },
+    {
+      "id": 5,
+      "name": "Vasya Vasenko",
+      "followed": false,
+      "location": "Minsk, Belarus",
+      "photo": "https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png",
+      "age": 35,
+      "email": "test5@test.com",
+      "password": "qazxsw"
+    },
+    {
+      "id": 6,
+      "name": "Misha Mishenko",
+      "followed": false,
+      "location": "Minsk, Belarus",
+      "photo": "https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png",
+      "age": 40,
+      "email": "test6@test.com",
+      "password": "qazxsw"
     }
+  ],
+  "messages": [
+    {
+      "text": "text",
+      "recipientId": 1,
+      "senderId": 2
+    },
+    {
+      "text": "text",
+      "recipientId": 1,
+      "senderId": 3
+    },
+    {
+      "text": "text",
+      "recipientId": 1,
+      "senderId": 4
+    }
+  ]
 }
