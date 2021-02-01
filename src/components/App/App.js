@@ -1,13 +1,13 @@
 import React from "react"
 import {BrowserRouter, Route} from 'react-router-dom'
 import styles from './App.module.css'
-import Header from '../Header'
 import SideBar from '../SideBar'
 import Friends from '../Friends'
 import News from '../News'
 import MessengerContainer from "../Messenger/MessengerContainer"
 import UsersContainer from "../Users/UsersContainer"
 import ProfileContainer from "../Profile/ProfileContainer"
+import Header from "../Header/Header"
 
 const App = () => {
 

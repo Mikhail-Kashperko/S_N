@@ -8,7 +8,8 @@
       "photo": "../../../src/img/avatar.jpg",
       "age": 15,
       "email": "test1@test.com",
-      "password": "qazxsw"
+      "password": "qazxsw1",
+      "auth": false
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
       "photo": "https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png",
       "age": 20,
       "email": "test2@test.com",
-      "password": "qazxsw"
+      "password": "qazxsw2",
+      "auth": false
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "photo": "https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png",
       "age": 25,
       "email": "test3@test.com",
-      "password": "qazxsw"
+      "password": "qazxsw3",
+      "auth": false
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "photo": "https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png",
       "age": 30,
       "email": "test4@test.com",
-      "password": "qazxsw"
+      "password": "qazxsw4",
+      "auth": false
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "photo": "https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png",
       "age": 35,
       "email": "test5@test.com",
-      "password": "qazxsw"
+      "password": "qazxsw5",
+      "auth": false
     },
     {
       "id": 6,
@@ -58,9 +63,12 @@
       "photo": "https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png",
       "age": 40,
       "email": "test6@test.com",
-      "password": "qazxsw"
+      "password": "qazxsw6",
+      "auth": false
     }
   ],
+
+  
   "messages": [
     {
       "text": "text",
