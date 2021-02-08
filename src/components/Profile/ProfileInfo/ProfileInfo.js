@@ -1,27 +1,33 @@
 import React from "react";
 import Preloader from "../../Preloader/Preloader";
 import styles from "./ProfileInfo.module.css";
+import * as axios from 'axios'
 
-const ProfileInfo = (props) => {
+class ProfileInfo extends React.Component {
 
-    if(!props.profile) {
-        return <Preloader/>
+    
+
+    render() {
+
+        let user = localStorage.user
+        let parsedUser = JSON.parse(user)
+        console.log(parsedUser)
+
+        return (
+            <div className = {styles.profile}>
+                <div>
+                    <img className = {styles.user_photo} src = {parsedUser.photo}/>
+                </div>
+                <div>
+                    {parsedUser.name} <br/>
+                    location: {parsedUser.location} <br/>
+                    age: {parsedUser.age}
+                </div>
+            </div>
+        ) 
     }
 
-    return (
-    <div className = {styles.profile}>
-        <div className = {styles.user_photo}>
-            <img src = {props.profile.photo}></img>
-        </div>
-        <div className = {styles.user_description}>
-            <div>
-                <h1>{props.profile.name}</h1>
-            </div>
-            <div>location : {props.profile.location}:</div>
-            <div>Age: {props.profile.age}</div>
-        </div>
-    </div>
-  );
-};
-
+}
 export default ProfileInfo;
+
+console.log(localStorage.getItem('user'))

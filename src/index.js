@@ -6,11 +6,9 @@ import {Provider} from 'react-redux'
 import Auth from "./components/Auth"
 
 ReactDOM.render(
+    <Provider store = {store}>
+        <App/>
+    </Provider>,
 
-    <Auth/>,
-
-    // <Provider store = {store}>
-    //     <App/>
-    // </Provider>,  
     document.getElementById("root")
 );
